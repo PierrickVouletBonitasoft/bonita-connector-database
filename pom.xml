@@ -64,7 +64,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:bonitasoft/bonita-connector-database</developerConnection>
+        <developerConnection>scm:git:git@github.com:bonitasoft/bonita-connector-database.git</developerConnection>
         <connection>scm:git:git@github.com:bonitasoft/bonita-connector-database.git</connection>
         <url>https://github.com/bonitasoft/bonita-connector-database</url>
     </scm>
