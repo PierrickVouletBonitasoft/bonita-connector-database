@@ -94,13 +94,13 @@ public class Database {
 //		properties.put(Context.PROVIDER_URL, "ldap://localhost:389/dc=etcee,dc=com");
 //		properties.put(Context.SECURITY_PRINCIPAL, "name");
 //		properties.put(Context.SECURITY_CREDENTIALS, "password");
-		properties.put(Context.PROVIDER_URL, "hikari:");
-		return new InitialContext(properties);
+//		properties.put(Context.PROVIDER_URL, "hikari:");
+		return new InitialContext();
 	}
 
 	private String getHashHikariInfo(String driver, String url, String username, String password) throws NoSuchAlgorithmException, UnsupportedEncodingException {
 		MessageDigest md = MessageDigest.getInstance("SHA-256");
-		md.update((driver + url + username + password).getBytes("UTF-8"));
+		md.update(("hiraki:/" + driver + ":" + url + ":" + username + ":" + password).getBytes("UTF-8"));
 		return new String(md.digest());
 	}
 
